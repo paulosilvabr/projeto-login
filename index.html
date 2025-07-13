@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-querry.css">
     <title>Login</title>
 </head>
 <body>
     <main id="login">
         <section>
             <div id="image">
-                Imagem
+
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p>Seja Bem-Vindo(a)! Faça login para acessar sua conta para fazer suas configurações em seu ambiente</p>
-                <form action="login.php" method="post"> 
-                    
+                <p>Seja Bem-Vindo(a)! Faça login para acessar sua conta para fazer suas configurações em seu ambiente.</p>
+
+                <form action="login.php" method="post">
+
+                    <div>
+                        <label for="email">Icon</label>
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu E-mail aqui..." required>
+                    </div>
+                    <div>
+                        <label for="senha">Icon</label>
+                        <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha aqui..." required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" id="submit">
+                        <input type="reset" value="Limpar" id="reset">
+                    </div>
                 </form>
             </div>
         </section>
