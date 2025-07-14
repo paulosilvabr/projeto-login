@@ -50,6 +50,10 @@
         float: left;
         width: 70%;
     }
+
+    div.campo {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -68,5 +72,15 @@
     div#form {
         float: right;
         width: 50%;
+    }
+    p {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    input[type="submit"] {
+        width: 300px;
     }
 }

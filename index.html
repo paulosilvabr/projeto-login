@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-querry.css">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <main id="login">
@@ -17,20 +18,20 @@
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a)! Faça login para acessar sua conta para fazer suas configurações em seu ambiente.</p>
 
-                <form action="login.php" method="post"><!--
+                <form action="login.php" method="post">
                 
-                    <div>
-                        <label for="email">Icon</label>
-                        <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu E-mail aqui..." required>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key_vertical</span>
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu E-mail aqui..." maxlength="30" required>
+                        <label for="email">Login</label>
                     </div>
-                    <div>
-                        <label for="senha">Icon</label>
-                        <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha aqui..." required>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha aqui..." minlength="8" maxlength="20" required>
+                        <label for="senha">Senha</label>
                     </div>
-                    <div>
-                        <input type="submit" value="Entrar" id="submit">
-                        <input type="reset" value="Limpar" id="reset">
-                    </div> -->
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="botao">Esqueci a Senha<span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
