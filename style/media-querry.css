@@ -1,2 +1,72 @@
 @charset "UTF-8";
 
+:root {
+    --cor1:#51276d;
+    --cor2:#46215f;
+    --cor3:#5cccc8;
+}
+
+/*
+
+    TYPICAL DEVICE BREAKPOINTS 
+    (Font: W3C 2025)
+
+    Extra small devices
+    (phones)
+    (--- and 600px) 
+
+    Small devices
+    (portrait tablets and large phones)
+    (600px and ---)
+
+    Medium devices
+    (landscape tablets)
+    (768px and ---)
+
+    Large devices
+    (laptops/desktops)
+    (992px and ---)
+
+    Extra large devices
+    (large laptops and desktops)
+    (1200px and ---)
+
+*/
+
+@media screen and (min-width: 768px) {
+    body, main {
+        background-image: linear-gradient(to top, var(--cor1), var(--cor3));
+    }
+    section#login {
+        width: 80vw;
+    }
+    div#image {
+        float: right;
+        width:30%;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+    }
+    div#form {
+        float: left;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body, main {
+        background-image: linear-gradient(to top, var(--cor1), var(--cor3));
+    }
+    section#login {
+        width: 900px;
+    }
+    div#image {
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+    div#form {
+        float: right;
+        width: 50%;
+    }
+}
