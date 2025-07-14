@@ -73,6 +73,15 @@
         float: right;
         width: 50%;
     }
+
+    div.campo {
+        max-width: 500px;
+    }
+
+    div.campo > input {
+        max-width: 500px;
+    }
+
     p {
         font-size: 1.2em;
     }
@@ -81,6 +90,9 @@
         font-size: 2em;
     }
     input[type="submit"] {
+        width: 300px;
+    }
+    a.botao {
         width: 300px;
     }
 }

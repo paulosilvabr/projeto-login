@@ -60,24 +60,23 @@ h1 {
 div.campo {
     margin: auto;
     background-color: var(--cor1);
-    width: 250px;
-    height: 35px;
+    width: 100%;
+    height: 45px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: white;
-    padding: 10px 10px 5px 10px;
 }
 
 div.campo > input {
     vertical-align: middle;
-    padding: 5px;
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 15px;
+    width: calc(100% - 59px);
 }
 
 div span{
     vertical-align: middle;
+    margin-left: 6px;
 }
 
 div > label {
